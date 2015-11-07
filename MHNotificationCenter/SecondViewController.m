@@ -35,6 +35,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+// 用按钮事件模拟触发通知
 - (void)btnAction:(UIButton *)btn {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"CHANGE_LABELTEXT" object:@"第二页的通知内容"];
     

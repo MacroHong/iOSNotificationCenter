@@ -59,4 +59,10 @@
     SecondViewController *vc = [[SecondViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+- (void)dealloc {
+    // 注销通知
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
 @end
